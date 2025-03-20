@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="main-header">
+      <div class="main-header__container container">
+        <h1 class="main-header__header">Поездки</h1>
+        <div class="main-header__account">
+          <a class="main-header__username">Заболоцкий К.О</a>
+          <button class="main-header__logout-button"></button>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="page-main__container">
+        <section class="page-main__intro intro">
+          <div class="intro__container container">
+            <h2 class="intro__header">Мои поездки</h2>
+            <button class="intro__add-button">Оформить поездку</button>
+          </div>
+
+        </section>
+        <section class="page-main__form-section form-section">
+          <div class="form__container container">
+            <form class="form-section__form">
+              <fieldset class="form-section__fieldset">
+                <div class="form-section__input-wrapper form-section__input-wrapper--since">
+                  <label class="form-section__label form-section__label--since" for="since">Период с: </label>
+                  <input class="form-section__input form-section__input--since" id="since" type="text" name="trip-start"
+                    placeholder="22.02.2024">
+                  <button class="form-section__button-calendar"></button>
+                  <button class="form-section__button-clear"></button>
+                </div>
+                <div class="form-section__input-wrapper form-section__input-wrapper--till">
+                  <label class="form-section__label form-section__label--till" for="till">по: </label>
+                  <input class="form-section__input form-section__input--till" id="till" type="text" name="trip-start"
+                    placeholder="Выбрать...">
+                  <button class="form-section__button-calendar form-section__button-calendar--till"></button>
+                </div>
+                <div class="form-section__input-wrapper form-section__input-wrapper--search">
+
+                  <input class="form-section__input form-section__input--search" id="search" type="text" name="search"
+                    placeholder="Поиск...">
+                  <button class="form-section__button-search"></button>
+
+                </div>
+                <button class="form-section__button-reset">Сбросить все</button>
+                <div class="form-section__input-wrapper form-section__input-wrapper--checkbox">
+                  <input class="form-section__checkbox" type="checkbox" id="archive-show" name="show-archive-trips">
+                  <label class="form-section__label form-section__label--checkbox" for="archive-show">Показать архивные
+                    поездки</label>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+        <section class="page-main__options options">
+          <div class="options__container container">
+            <ul class="options__list">
+              <li class="options__item" tabindex="0">
+                <ul class="options__table">
+                  <li class="options__column options__column--number">
+                    <div class="options__head options__head--number">№ поездки</div>
+                    <div class="options__value  options__value--number">000115</div>
+                  </li>
+                  <li class="options__column options__column--date">
+                    <div class="options__head options__head--date">Дата поездки</div>
+                    <div class="options__value">22.02.2024 - 27.02.2024</div>
+                  </li>
+                  <li class="options__column options__column--cost-plan">
+                    <div class="options__head options__head--cost-plan">Сумма, план</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--cost-fact">
+                    <div class="options__head options__head--cost-fact">Сумма, факт</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--city">
+                    <div class="options__head options__head--city">Город</div>
+                    <div class="options__value">Москва, Ярославль, Ижевск, Владимир</div>
+                  </li>
+                  <li class="options__column options__column--status">
+                    <div class="options__head options__head--status">Статус</div>
+                    <div class="options__value options__value--status">Документы</div>
+                    </table>
+                  </li>
+                </ul>
+              </li>
+              <li class="options__item" tabindex="0">
+                <ul class="options__table">
+                  <li class="options__column options__column--number">
+                    <div class="options__head options__head--number">№ поездки</div>
+                    <div class="options__value  options__value--number">000117</div>
+                  </li>
+                  <li class="options__column options__column--date">
+                    <div class="options__head options__head--date">Дата поездки</div>
+                    <div class="options__value">22.02.2024 - 27.02.2024</div>
+                  </li>
+                  <li class="options__column options__column--cost-plan">
+                    <div class="options__head options__head--cost-plan">Сумма, план</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--cost-fact">
+                    <div class="options__head options__head--cost-fact">Сумма, факт</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--city">
+                    <div class="options__head options__head--city">Город</div>
+                    <div class="options__value">Москва</div>
+                  </li>
+                  <li class="options__column options__column--status">
+                    <div class="options__head options__head--status">Статус</div>
+                    <div class="options__value options__value--status">Документы</div>
+                    </table>
+                  </li>
+                </ul>
+              </li>
+              <li class="options__item" tabindex="0">
+                <ul class="options__table">
+                  <li class="options__column options__column--number">
+                    <div class="options__head options__head--number">№ поездки</div>
+                    <div class="options__value  options__value--number">000074</div>
+                  </li>
+                  <li class="options__column options__column--date">
+                    <div class="options__head options__head--date">Дата поездки</div>
+                    <div class="options__value">22.02.2024 - 27.02.2024</div>
+                  </li>
+                  <li class="options__column options__column--cost-plan">
+                    <div class="options__head options__head--cost-plan">Сумма, план</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--cost-fact">
+                    <div class="options__head options__head--cost-fact">Сумма, факт</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--city">
+                    <div class="options__head options__head--city">Город</div>
+                    <div class="options__tooltip-holder">
+                      <div class="options__value options__value--city">Кременчуг-Константиновское,
+                        Петропавловск-Камчатский, Новосибирск,
+                        Волгоград, Саратов
+                      </div>
+                      <div class="options__tooltip-icon">
+                        <div class="options__tooltip">Кременчуг-Константиновское,
+                          Петропавловск-Камчатский, Новосибирск,
+                          Волгоград, Саратов</div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="options__column options__column--status">
+                    <div class="options__head options__head--status">Статус</div>
+                    <div class="options__value options__value--status">Документы</div>
+                    </table>
+                  </li>
+                </ul>
+              </li>
+              <li class="options__item" tabindex="0">
+                <ul class="options__table">
+                  <li class="options__column options__column--number">
+                    <div class="options__head options__head--number">№ поездки</div>
+                    <div class="options__value  options__value--number">000115</div>
+                  </li>
+                  <li class="options__column options__column--date">
+                    <div class="options__head options__head--date">Дата поездки</div>
+                    <div class="options__value">22.02.2024 - 27.02.2024</div>
+                  </li>
+                  <li class="options__column options__column--cost-plan">
+                    <div class="options__head options__head--cost-plan">Сумма, план</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--cost-fact">
+                    <div class="options__head options__head--cost-fact">Сумма, факт</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--city">
+                    <div class="options__head options__head--city">Город</div>
+                    <div class="options__value">Москва, Ярославль, Ижевск, Владимир</div>
+                  </li>
+                  <li class="options__column options__column--status">
+                    <div class="options__head options__head--status">Статус</div>
+                    <div class="options__value options__value--status">Документы</div>
+                    </table>
+                  </li>
+                </ul>
+              </li>
+              <li class="options__item" tabindex="0">
+                <ul class="options__table">
+                  <li class="options__column options__column--number">
+                    <div class="options__head options__head--number">№ поездки</div>
+                    <div class="options__value  options__value--number">000211</div>
+                  </li>
+                  <li class="options__column options__column--date">
+                    <div class="options__head options__head--date">Дата поездки</div>
+                    <div class="options__value">22.02.2024 - 27.02.2024</div>
+                  </li>
+                  <li class="options__column options__column--cost-plan">
+                    <div class="options__head options__head--cost-plan">Сумма, план</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--cost-fact">
+                    <div class="options__head options__head--cost-fact">Сумма, факт</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--city">
+                    <div class="options__head options__head--city">Город</div>
+                    <div class="options__value">Москва, Ярославль, Ижевск, Владимир</div>
+                  </li>
+                  <li class="options__column options__column--status">
+                    <div class="options__head options__head--status">Статус</div>
+                    <div class="options__value options__value--status">Документы</div>
+                    </table>
+                  </li>
+                </ul>
+              </li>
+              <li class="options__item" tabindex="0">
+                <ul class="options__table">
+                  <li class="options__column options__column--number">
+                    <div class="options__head options__head--number">№ поездки</div>
+                    <div class="options__value  options__value--number">000118</div>
+                  </li>
+                  <li class="options__column options__column--date">
+                    <div class="options__head options__head--date">Дата поездки</div>
+                    <div class="options__value">22.02.2024 - 27.02.2024</div>
+                  </li>
+                  <li class="options__column options__column--cost-plan">
+                    <div class="options__head options__head--cost-plan">Сумма, план</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--cost-fact">
+                    <div class="options__head options__head--cost-fact">Сумма, факт</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--city">
+                    <div class="options__head options__head--city">Город</div>
+                    <div class="options__value">Москва, Ярославль, Ижевск, Владимир</div>
+                  </li>
+                  <li class="options__column options__column--status">
+                    <div class="options__head options__head--status">Статус</div>
+                    <div class="options__value options__value--status">Документы</div>
+                    </table>
+                  </li>
+                </ul>
+              </li>
+              <li class="options__item" tabindex="0">
+                <ul class="options__table">
+                  <li class="options__column options__column--number">
+                    <div class="options__head options__head--number">№ поездки</div>
+                    <div class="options__value  options__value--number">000119</div>
+                  </li>
+                  <li class="options__column options__column--date">
+                    <div class="options__head options__head--date">Дата поездки</div>
+                    <div class="options__value">22.02.2024 - 27.02.2024</div>
+                  </li>
+                  <li class="options__column options__column--cost-plan">
+                    <div class="options__head options__head--cost-plan">Сумма, план</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--cost-fact">
+                    <div class="options__head options__head--cost-fact">Сумма, факт</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--city">
+                    <div class="options__head options__head--city">Город</div>
+                    <div class="options__value">Москва, Ярославль, Ижевск, Владимир</div>
+                  </li>
+                  <li class="options__column options__column--status">
+                    <div class="options__head options__head--status">Статус</div>
+                    <div class="options__value options__value--status">Документы</div>
+                    </table>
+                  </li>
+                </ul>
+              </li>
+              <li class="options__item" tabindex="0">
+                <ul class="options__table">
+                  <li class="options__column options__column--number">
+                    <div class="options__head options__head--number">№ поездки</div>
+                    <div class="options__value  options__value--number">000120</div>
+                  </li>
+                  <li class="options__column options__column--date">
+                    <div class="options__head options__head--date">Дата поездки</div>
+                    <div class="options__value">22.02.2024 - 27.02.2024</div>
+                  </li>
+                  <li class="options__column options__column--cost-plan">
+                    <div class="options__head options__head--cost-plan">Сумма, план</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--cost-fact">
+                    <div class="options__head options__head--cost-fact">Сумма, факт</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--city">
+                    <div class="options__head options__head--city">Город</div>
+                    <div class="options__value">Москва, Ярославль, Ижевск, Владимир</div>
+                  </li>
+                  <li class="options__column options__column--status">
+                    <div class="options__head options__head--status">Статус</div>
+                    <div class="options__value options__value--status">Документы</div>
+                    </table>
+                  </li>
+                </ul>
+              </li>
+              <li class="options__item" tabindex="0">
+                <ul class="options__table">
+                  <li class="options__column options__column--number">
+                    <div class="options__head options__head--number">№ поездки</div>
+                    <div class="options__value  options__value--number">000133</div>
+                  </li>
+                  <li class="options__column options__column--date">
+                    <div class="options__head options__head--date">Дата поездки</div>
+                    <div class="options__value">22.02.2024 - 27.02.2024</div>
+                  </li>
+                  <li class="options__column options__column--cost-plan">
+                    <div class="options__head options__head--cost-plan">Сумма, план</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--cost-fact">
+                    <div class="options__head options__head--cost-fact">Сумма, факт</div>
+                    <div class="options__value">29 400,00</div>
+                  </li>
+                  <li class="options__column options__column--city">
+                    <div class="options__head options__head--city">Город</div>
+                    <div class="options__value">Москва, Ярославль, Ижевск, Владимир</div>
+                  </li>
+                  <li class="options__column options__column--status">
+                    <div class="options__head options__head--status">Статус</div>
+                    <div class="options__value options__value--status">Документы</div>
+                    </table>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!--
+            <ul class="options__list">
+              <li class="options__item">
+                <table class="options__table">
+                  <tr class="options__heads">
+                    <td class="options__head options__head--number">№ поездки</td>
+                    <td class="options__head options__head--date">Дата поездки</td>
+                    <td class="options__head options__head--cost-plan">Сумма, план</td>
+                    <td class="options__head options__head--cost-fact">Сумма, факт</td>
+                    <td class="options__head options__head--city">Город</td>
+                  </tr>
+                  <tr class="options__values">
+                    <td class="options__value options__value--number">000115</td>
+                    <td class="options__value">22.02.2024 - 27.02.2024</td>
+                    <td class="options__value">29 400,00</td>
+                    <td class="options__value">29 400,00</td>
+                    <td class="options__value">Москва, Ярославль, Ижевск, Владимир</td>
+                  </tr>
+                </table>
+                <div class="options__status-info">
+                  <div>Статус</div>
+                  <div class="options__status-value">Документы</div>
+                  </table>
+              </li>
+              <li class="options__item">
+                <table>
+                  <tr class="options__heads">
+                    <td>№ поездки</td>
+                    <td>Дата поездки</td>
+                    <td>Сумма, план</td>
+                    <td>Сумма, факт</td>
+                    <td>Город</td>
+                  </tr>
+                  <tr class="options__values">
+                    <td class="options__number-value">000117</td>
+                    <td>22.02.2024 - 27.02.2024</td>
+                    <td>29 400,00</td>
+                    <td>29 400,00</td>
+                    <td>Москва, Ярославль, Ижевск, Владимир</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="options__item">
+                <table>
+                  <tr class="options__heads">
+                    <td>№ поездки</td>
+                    <td>Дата поездки</td>
+                    <td>Сумма, план</td>
+                    <td>Сумма, факт</td>
+                    <td>Город</td>
+                  </tr>
+                  <tr class="options__values">
+                    <td class="options__number-value">000074</td>
+                    <td>22.02.2024 - 27.02.2024</td>
+                    <td>29 400,00</td>
+                    <td>29 400,00</td>
+                    <td>Кременчуг-Константиновское, Петропавловск-Камчатский, Новосибирск, Волгоград</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="options__item">
+                <table>
+                  <tr class="options__heads">
+                    <td>№ поездки</td>
+                    <td>Дата поездки</td>
+                    <td>Сумма, план</td>
+                    <td>Сумма, факт</td>
+                    <td>Город</td>
+                  </tr>
+                  <tr class="options__values">
+                    <td class="options__number-value">000115</td>
+                    <td>22.02.2024 - 27.02.2024</td>
+                    <td>29 400,00</td>
+                    <td>29 400,00</td>
+                    <td>Москва, Ярославль, Ижевск, Владимир</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="options__item">
+                <table>
+                  <tr class="options__heads">
+                    <td>№ поездки</td>
+                    <td>Дата поездки</td>
+                    <td>Сумма, план</td>
+                    <td>Сумма, факт</td>
+                    <td>Город</td>
+                  </tr>
+                  <tr class="options__values">
+                    <td class="options__number-value">000211</td>
+                    <td>22.02.2024 - 27.02.2024</td>
+                    <td>29 400,00</td>
+                    <td>29 400,00</td>
+                    <td>Москва, Ярославль, Ижевск, Владимир</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="options__item">
+                <table>
+                  <tr class="options__heads">
+                    <td>№ поездки</td>
+                    <td>Дата поездки</td>
+                    <td>Сумма, план</td>
+                    <td>Сумма, факт</td>
+                    <td>Город</td>
+                  </tr>
+                  <tr class="options__values">
+                    <td class="options__number-value">000118</td>
+                    <td>22.02.2024 - 27.02.2024</td>
+                    <td>29 400,00</td>
+                    <td>29 400,00</td>
+                    <td>Москва, Ярославль, Ижевск, Владимир</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="options__item">
+                <table>
+                  <tr class="options__heads">
+                    <td>№ поездки</td>
+                    <td>Дата поездки</td>
+                    <td>Сумма, план</td>
+                    <td>Сумма, факт</td>
+                    <td>Город</td>
+                  </tr>
+                  <tr class="options__values">
+                    <td class="options__number-value">000119</td>
+                    <td>22.02.2024 - 27.02.2024</td>
+                    <td>29 400,00</td>
+                    <td>29 400,00</td>
+                    <td>Москва, Ярославль, Ижевск, Владимир</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="options__item">
+                <table>
+                  <tr class="options__heads">
+                    <td>№ поездки</td>
+                    <td>Дата поездки</td>
+                    <td>Сумма, план</td>
+                    <td>Сумма, факт</td>
+                    <td>Город</td>
+                  </tr>
+                  <tr class="options__values">
+                    <td class="options__number-value">000120</td>
+                    <td>22.02.2024 - 27.02.2024</td>
+                    <td>29 400,00</td>
+                    <td>29 400,00</td>
+                    <td>Москва, Ярославль, Ижевск, Владимир</td>
+                  </tr>
+                </table>
+              </li>
+              <li class="options__item">
+                <table>
+                  <tr class="options__heads">
+                    <td>№ поездки</td>
+                    <td>Дата поездки</td>
+                    <td>Сумма, план</td>
+                    <td>Сумма, факт</td>
+                    <td>Город</td>
+                  </tr>
+                  <tr class="options__values">
+                    <td class="options__number-value">000133</td>
+                    <td>22.02.2024 - 27.02.2024</td>
+                    <td>29 400,00</td>
+                    <td>29 400,00</td>
+                    <td>Москва, Ярославль, Ижевск, Владимир</td>
+                  </tr>
+                </table>
+              </li>
+
+            </ul>
+          -->
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>
